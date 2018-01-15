@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvLeft"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="标题"
+        android:textColor="@color/text_title"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tvMao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="："
+        android:textColor="@color/text_title"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/linear_bg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/et_av_bg">
+
+        <EditText
+            android:id="@+id/tvRight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:minHeight="40dp"
+            android:padding="8dp"
+            android:text="内容"
+            android:textSize="12sp"
+            android:textColor="@color/text_hint"
+            android:textColorHint="@color/text_hint"/>
+
+        <ImageView
+            android:id="@+id/ivRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

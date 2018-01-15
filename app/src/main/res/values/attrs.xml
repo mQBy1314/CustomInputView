@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="left_Text" format="string" />
+    <attr name="right_Text" format="string" />
+    <attr name="right_HintText" format="string" />
+    <attr name="right_drawableRight" format="reference" />
+
+    <declare-styleable name="AddView">
+        <attr name="left_Text" />
+        <attr name="right_Text" />
+        <attr name="right_HintText" />
+        <attr name="right_drawableRight" />
+        <attr name="show_Mao" format="boolean"/>
+        <attr name="type">
+            <enum name="input" value="100" />
+            <enum name="click" value="101" />
+            <enum name="no" value="102" />
+            <enum name="spinner" value="103" />
+        </attr>
+    </declare-styleable>
+
+</resources>

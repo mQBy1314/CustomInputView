@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="80dp"
+    tools:context="com.chinaitop.linxia.custominputview.MainActivity">
+
+
+    <com.chinaitop.linxia.custominputview.widget.AddView
+        android:id="@+id/av_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_Text="普通"
+        app:right_HintText="请输入内容"
+        app:type="input" />
+
+    <com.chinaitop.linxia.custominputview.widget.AddView
+        android:id="@+id/av_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_Text="选择日期"
+        app:right_Text="请选择"
+        app:type="click" />
+
+    <com.chinaitop.linxia.custominputview.widget.AddView
+        android:id="@+id/av_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_Text="错误提示"
+        app:right_HintText="必填"
+        app:type="input" />
+
+    <com.chinaitop.linxia.custominputview.widget.AddView
+        android:id="@+id/av_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_Text="不可输入及点击"
+        app:type="no" />
+
+    <com.chinaitop.linxia.custominputview.widget.AddView
+        android:id="@+id/av_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_Text="点击弹出列表"
+        app:right_HintText="请选择"
+        app:type="spinner" />
+
+</LinearLayout>
